@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -12,10 +15,109 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  
+    <div class="dashboard">
+      <div class="profile card grid-row-span">
+        <div class="details">
+          <div class="detail-head">
+            <div class="profile-pic">
+              <img src="images/image-jeremy.png" alt="Jeremy Profile Pic">
+            </div>
+          </div>
+          <div class="detail-body">
+            <div class="small-text">Report for</div>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#" data-item="daily" class="nav-item selected">Daily</a></li>
+            <li><a href="#" data-item="weekly" class="nav-item">Weekly</a></li>
+            <li><a href="#" data-item="monthly" class="nav-item">Monthly</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="work card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Work</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="work-current"></div>
+            <div class="last-week" id="work-previous"></div>
+          </div>
+        </div>
+      </div>
+      <div class="play card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Play</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="play-current"></div>
+            <div class="last-week" id="play-previous"></div>
+          </div>
+        </div>
+      </div>
+      <div class="study card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Study</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="study-current"></div>
+            <div class="last-week" id="study-previous"></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="exercise card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Exercise</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="exercise-current"></div>
+            <div class="last-week" id="exercise-previous"></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="social card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Social</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="social-current"></div>
+            <div class="last-week" id="social-previous"></div>
+          </div>
+        </div>
+      </div>
+      <div class="selfcare card">
+        <div class="inside-card">
+          <div class="card-head">
+            <div class="card-title">Self Care</div>
+            <div class="icon"><img src="images/icon-ellipsis.svg" alt="Ellipsis"></div>
+          </div>
+          <div class="card-details">
+            <div class="current-time" id="self-care-current"></div>
+            <div class="last-week" id="self-care-previous"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
+    Coded by <a href="#">Swapnil Markal</a>.
   </div>
 </body>
 </html>
