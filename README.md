@@ -53,6 +53,7 @@ Users should be able to:
 
 ### Continued development
 
+I didn't focus of accessibility much. Would focus more on it from next project.
 Would love to implement the same solution in React
 
 ## Author
